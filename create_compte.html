@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crer un nouveau compte</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="se_connecter_container">
+        <div class="card-body" style="width: 100%;">
+            <h4 class="title text-center mt-4">
+              S'inscrire
+            </h4>
+            <div class="err none">
+                <p>messsage</p>
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+    
+            </div>
+            <form class="form-box px-3">
+              <div class="form-input">
+                  <span><i class="fa fa-user"></i></span>
+                  <input type="text" name="nom" placeholder="Nom, Prénom"  required>
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-envelope-o"></i></span>
+                <input type="email" name="email" placeholder="Adresse éléctronique" tabindex="10" required>
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-envelope-o"></i></span>
+                <input type="tel" name="phone" placeholder="Le numero de telepone" tabindex="10" required>
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+              </div>
+              <div class="form-input">
+                <span><i class="fa fa-key"></i></span>
+                <input type="password" id="conf_password" name="" placeholder="confirmer le mot de passe" required>
+              </div>
+              <div class="form-input mt-20">
+                <span><i class="fa fa-info-circle"></i></span>
+                <textarea style="width: 100%;" name="adresse1" placeholder="     Adress1 " class="form-control" required></textarea>
+              </div>
+
+              <div class="form-input mt-20">
+                <span><i class="fa fa-info-circle"></i></span>
+                <textarea style="width: 100%;" name="adresse1" placeholder="     Adress2" class="form-control"></textarea>
+              </div>
+              
+  
+              
+              <div class="mb-3">
+                <button type="submit" class="btn btn-block text-uppercase">
+                  Créer un compte
+                </button>
+              </div>
+              
+  
+              <div class="text-center mb-2">
+                <a href="login.php" class="register-link">
+                  J'ai déjà un compte
+                </a>
+              </div>
+            </form>
+          </div>
+    </div>
+    <script src="Js Global/create_compte.js"></script>
+</body>
+</html>
