@@ -15,9 +15,7 @@
     $req->execute();
     $names = $req->fetchAll(PDO::FETCH_COLUMN);
     if(count($names)===0){
-        // $date = date('Y-m-d H:i:s'); 
-        // $datetime = date('Y-m-d H:i:s', strtotime($date)); 
-        // $last_id = Last_Valeur_ID($con,"id","caffe","LO000");
+        
         $stmt = $con->prepare("INSERT INTO Utilisateur (name,email,phone,password,adress1,adress2) VALUES (?,?,?,?,?,?)");
         $stmt->bindValue(1,$name);
         $stmt->bindValue(2,$email);
