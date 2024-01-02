@@ -91,42 +91,7 @@ btn_add.onclick = ()=>{
             },3000);
     
     }
-    xhr.response;
-                    console.log(data);
-                    err.classList.remove('none');
-                    if(data === "ok"){
-                                            
-                        colors.forEach((e)=>{
-                            e.onclick = ()=>{
-                                remove(colors,"chosir");
-                            }
-                        })
-                        size.forEach((e)=>{
-                            remove(size,"selected");
-                        })
-                                                
-                        
-                        err.style.backgroundColor = "#327B32";
-                        err_mesg.textContent = "le produit ajouter avec succes";
-                    }
-                    else{
-                        
-                        err.style.backgroundColor = "red";
-                        err_mesg.textContent = data ;
-                    }
-                    document.querySelector('svg').onclick = ()=>{
-                        err.classList.add('none');
-                    }
-                    setTimeout(()=>{
-                        err.classList.add('none');
-                    },3000);
-                }
-            }
-        };
-
-        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhr.send(`id_pro=${id_pro}&&id_user=${authenticated_user.value}&&id_colors=${id_color}&&id_size=${id_size}&&q=${q}`);
-    }
+    
 
 }
 
