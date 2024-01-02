@@ -91,14 +91,7 @@ btn_add.onclick = ()=>{
             },3000);
     
     }
-    else{
-        //console.log(authenticated_user.value);
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "phpFile/comand/ajouter_panier.php", true);
-        xhr.onload = () => {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    let data = xhr.response;
+    xhr.response;
                     console.log(data);
                     err.classList.remove('none');
                     if(data === "ok"){
